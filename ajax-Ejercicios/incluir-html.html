@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sitio con AJAX</title>
+  <title>Incluir HTML con AJAX</title>
   <style>
     html {
       box-sizing: border-box;
@@ -72,28 +72,13 @@
       opacity: .75;
     }
   </style>
+  <script src="assets/include-html.js"></script>
 </head>
 
 <body>
-  <header class="header">
-    <section class="header-content container">
-      <article class="logo">
-        <img src="https://jonmircha.com/img/kEnAi.svg" alt="kEnAi">
-      </article>
-      <nav class="menu">
-        <a href="assets/home.html">Home</a>
-        <a href="assets/acerca.html">Acerca</a>
-        <a href="assets/servicios.html">Servicios</a>
-        <a href="assets/contacto.html">Contacto</a>
-      </nav>
-    </section>
-  </header>
+  <div data-include="assets/header.html"></div>
   <main class="container"></main>
-  <footer class="footer container">
-    <p>
-      <small>sitio diseñado por Magdi</small>
-    </p>
-  </footer>
+  <div data-include="assets/footer.html"></div>
   <script>
     const d = document,
         $main = d.querySelector("main");
